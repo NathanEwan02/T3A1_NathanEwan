@@ -13,24 +13,24 @@ class Car { // Intitalising a class named Car
 
 class Model extends Car { // Creates a class called 'Model' and uses the key word 'extends' to inherit from the Car class.
   constructor(brand, mod) { // The initialisation of the brand and mod attributes.
-    super(brand);
-    this.model = mod;
+    super(brand); // The 'super' is used to access the brand attribute from the Car class as well as any additional methods or attributes.
+    this.model = mod; // This creates a paramater called 'thid.mod' that is accesable within the Model class.
   }
-  show() {
-    return this.present() + ', it was made in ' + this.model;
+  show() { // A method accessable in the Model class.
+    return this.present() + ', it was made in ' + this.model; // This calls on the 'present' method within the Car class and concatinates this with a string and the this.model attribute, and then returns it.
   }
+} // End of Model class
+
+let makes = ["Ford", "Holden", "Toyota"] // defines an array called 'makes' which holds the different names of car brands. This declaration uses lets which allows for the array modified later on.
+let models = Array.from(new Array(40), (x,i) => i + 1980) // Creates an array of 40 elements. It then iterates through the array with x being the iterator and i being each element. It starts at the first index and will set a value of 1980 and incease each time by one. 
+
+function randomIntFromInterval(min,max) { // min and max included, a new function with two parameters, min and max.
+    return Math.floor(Math.random()*(max-min+1)+min); // A rounded down random number that uses the equation min - max + 1 + min. Math.random will then return a value from the sum of the equation provided.
 }
 
-let makes = ["Ford", "Holden", "Toyota"]
-let models = Array.from(new Array(40), (x,i) => i + 1980)
+for (model of models) { // This is for loop that will iterate through each model (40 models) within the models array.
 
-function randomIntFromInterval(min,max) { // min and max included
-    return Math.floor(Math.random()*(max-min+1)+min);
-}
-
-for (model of models) {
-
-  make = makes[randomIntFromInterval(0,makes.length-1)]
+  make = makes[randomIntFromInterval(0,makes.length-1)] //
   model = models[randomIntFromInterval(0,makes.length-1)]
 
   mycar = new Model(make, model);
