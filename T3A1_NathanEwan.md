@@ -30,10 +30,10 @@ function randomIntFromInterval(min,max) { // min and max included, a new functio
 
 for (model of models) { // This is for loop that will iterate through each model (40 models) within the models array.
 
-  make = makes[randomIntFromInterval(0,makes.length-1)] //
-  model = models[randomIntFromInterval(0,makes.length-1)]
+  make = makes[randomIntFromInterval(0,makes.length-1)] // A variable called make that uses the randomInt with the parameters of 0 and the length of the makes array - 1 to retrieve a random make from makes array.
+  model = models[randomIntFromInterval(0,makes.length-1)] // Does the same thing as the previous varibale however, it uses the models array to retrieve its data.
 
-  mycar = new Model(make, model);
-  console.log(mycar.show())
+  mycar = new Model(make, model); // creates a new varaible 'mycar' to create a new instance of the Model object using the attributes of the make and model variables above.
+  console.log(mycar.show()) // logs the result of the mycar instance using the show method within the model class. This prints to the console 'I have a make, it was made in model.' This will be repeated 40 times in total, as that is the number of elements within the array.
 } 
 ```
