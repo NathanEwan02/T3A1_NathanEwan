@@ -32,9 +32,9 @@ React is seen as the ‘views’ of the MVC model and work with the controller t
 
 Node JS is a server environment for JavaScript designed to handle providing server environment for the web app. It is used to run the JavaScript code on the server side of the application. 
 
-## Q4.
+## Q4. A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
-## Q5. 
+## Q5. With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
 
 The rails marketplace application I had developed as part of the term 2 assessment for CoderAcademy required a variety of skills and knowledge to complete. To be more specific I will break these up into three classifications, technical, planning, and soft skill. The tech skills I needed for this project included knowledge of Ruby on Rails, Ruby, HTML and PostgreSQL. To first tackle the Ruby on Rails framework I needed an understanding of the basics of Ruby this meant a solid understanding of classes, functions, objects, and how files interact with one another. This is what allowed me to approach Ruby on Rails, which led me to learning the concept of MVC’s (models, views, and controllers) and how each of these interacted with one another. This allowed further incorporate my skills of HTML when creating views using erb (embedded ruby) to display data from the data base on a web page. An understanding of relational data was also a crucial aspect of this assignment. This meant knowledge of the built-in ruby query methods which allowed for ruby syntax to make SQL requests to the database. As well as understanding how each piece of data and entity was related to one another through primary and foreign keys and many-to-many, one-to-many, and one-to-one relationships. As for Postgres, I required knowledge of how to navigate the data base management system and its available tools. 
 
@@ -42,23 +42,23 @@ For planning skills, I required knowledge and skills in ERDs, project management
 
 Lastly are the soft skills, which include problem solving, time management, and critical thinking, these skills were what enabled me to maintain speed and efficiency through the project. Problem solving has always been a crucial part of programming and I have had to apply it multiple times in the lifecycle of the project. When my code produced errors, wasn’t working or gave the wrong output I needed to analyse and evaluate the code I had written to determine the issue. This also played into soft skills such as perseverance as at times I had to refactor a lot of code or research to find out what had caused the issue. Time management played a big roll as it assisted in delegating energy and time to more crucial aspects of the project or parts I was struggling on. This prevented me from wasting time on unnecessary tasks.
 
-## Q7. 
+## Q7. Explain control flow, using an example from the JavaScript programming language
 
 The model of control flow (also known as the flow of control) is one that is featured in all high-level programming languages. It refers to the sequential order in which each instruction, statement and line of code is executed. The code will execute each line of code in order starting from the first line until it arrives at the last line unless it reaches a conditional statement or a loop. A conditional statement is used to commit a particular sequence of code only once the condition/conditions for that statement are true. Otherwise, it will be ignored and instead commit the ‘else’ part of the conditional. If there is no ‘else’ statement, then the code will simply continue from the preceding line of code where the conditional ended. There are different types of loops in JavaScript, two of which will be explained, for loops and while loops. A for loop works by iterating over each element within a given variable (such as an array, object, or string) and uses an index/counter to determine when that loop will end. The index will be increased after each iteration until it reaches a specified number. As for the while loop, it operates by executing the code given to it while a condition is true and ends once it is made false within that while loop. Functions/methods are also executed differently from regular code. In control flow a JavaScript function is not executed unless it has been called upon. This means that even if a function containing a block of code is at the top of a JavaScript file it will not be executed unless the name of that function is used to execute it.
 
 Below is a snippet of JavaScript code that will be used to demonstrate the concept of control flow within the language. 
 
-## Q8. 
+## Q8. Explain type coercion, using examples from the JavaScript programming language
 
 Type coercion is the implicit transformation from one data type to a different data type. This can include float to integer, integer to float, integer to string, string to integer and so on. It is important to note that type coercion and type conversion are separate, type coercion is always implicit whereas type conversion is explicit. These changes will occur depending on the type operating performed on them. For example, when adding a string with numeric values and an integer JavaScript will assume that the operation being performed is a string concatenation and implicitly convert the integer into a string. Whereas for the opposite (string to integer coercion) a multiplication, subtraction or division operation must be used on these two values. In the case of changing Boolean values to numeric ones, the Boolean is converted to an integer, 0 for false and 1 for true. 
 
 Below are some examples of this in JavaScript.
 
-## Q9. 
+## Q9. Explain data types, using examples from the JavaScript programming language
 
 Put simply, a data type is a method of classification used to distinguish between different types of data. This is done so that data can be used in various contexts for a particular task or to obtain a specific output. The JavaScript language uses many data types including, integers, strings, arrays, objects, Booleans, and floats. Integers are whole numbers that can be positive, negative and zero. Mathematical operations can be performed on integers including the basic operations multiplication, division, addition, and subtraction. This also goes for floats (floating point numbers) which are integers followed by decimals which can provide a more precise numeric value for the developer. Strings simply refers to a string of characters be it numbers, letters, or symbols. This data type can perform functions such as string concatenation and can be iterated through using a loop. Arrays can be thought of as a list/collection of values which can be either, integers, strings, floats, Booleans and even objects. Arrays can be iterated through using loops such as for loops and while loops and holds a numbered index value for each element of the array starting at zero. Objects are a collection of key/value pairs that can either be represented as symbols (using ‘:’) or as strings. The key value pairs within the object are not ordered and are accessed by their key. Finally, there are Booleans which are data types that can only have two possibly values, most often represented as true or false. 
 
-## Q10. 
+## Q10. Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 
 There are many ways in which an array can be manipulated, this includes iteration, finding an element or checking if an element exists. JavaScript provides developers with many built in methods to simplify achieving these things. Each of these methods either falls into the category of an ‘non mutable’ method or a ‘mutable’ method. This means that mutable methods will be able to change the contents of the array, whereas a non-mutable method cannot. An example of some of the methods that are non-mutable include: 
 
@@ -88,7 +88,7 @@ The next list will be examples of different ways to iterate through an array, so
 
 Below is an example of multiple different ways in which an array can be manipulated in JavaScript code. 
 
-## Q11.
+## Q11. Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
 
 A JavaScript object is an unordered collection of properties, with each property consisting of a key-value pair. The key-value pair refers to the association between a given key (which can be represented as either a string or symbol) and the value of the key. An object can either be declared by assigning a variable with `new Object()` or by using curly braces such as, `const person  = {}`. To talk about data manipulation of objects in JavaScript, the first concept to understand is creating/adding new properties to an existing object. In JavaScript this can be done by using the name given to the object followed by a period (.) and the name of the new or existing key. This is then followed by assigning a new value using the equals sign (=) and the new value itself. For example, `person.name = ‘David’`. Since our person object does not yet have any properties a new key value pair will be created as a result of this. If the key already exists, then this declaration will reassign the original value of that key to the new one. 
 
@@ -100,11 +100,11 @@ Lastly, there are also ways of incorporating functions into objects through the 
 
 Below are a few examples in JavaScript code of how objects can be manipulated. 
 
-## Q12. 
+## Q12. Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
 
+JSON (JavaScript object notation) is a standard way of representing structured data in text-based format. Its most common use is for transmitting data to be displayed in web apps. As the name suggests it is very similar to how JavaScript objects are represented that being curly braces ({}). Manipulating the data within JSON objects is also similar to how it is done in vanilla JavaScript with some differences. To demonstrate how JSON can be manipulated I will explain how to create, delete, and parse JSON data. Creating JSON data can be done by ensuring that the keys are stings and the structure begins with curly braces as an object should. Next, we take a variable that holds the object we want to pass to the JSON file and use the method `JSON.stringify()`. This method uses the object as a parameter and converts the keys to strings making it much mor simple for it be implemented into a JSON file. When deleting a JSON element it can either be done manually or by using various built-in methods, for example if you have identified the position of the object and the json is stored in an array you could use a splice method. Finally, the most common way of manipulating JSON day is by calling from a file so that it can be used in some way in a program. This is done by using the JSON built in function called `parse()` which retrieves the JSON object and returns it in standard JavaScript object format. This can then be stored in a variable where further data manipulation can be used. 
 
-
-## Q13. 
+## Q13. For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
 ``` 
 class Car { // Intitalising a class named Car
   constructor(brand) { // Initialisation of a constructor method which is used to establish the properties/attributes of the class and is called upon creation of a class instance.
