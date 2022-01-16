@@ -68,11 +68,48 @@ The model of control flow (also known as the flow of control) is one that is fea
 
 Below is a snippet of JavaScript code that will be used to demonstrate the concept of control flow within the language. 
 
+```
+function Multiplication(a, b) { // This function is ignored by the code as it has not yet been called on
+    return a * b 
+}
+
+function Addition(a, b) { // This function is also ignored by control flow
+    return a + b
+}
+
+let count = 0 // This is the first line of code that is read
+let num1 = 5 // Second line of code that is read
+let num2 = 10 // Third line of code that is read
+
+while (count < 5) { //This while loop will reamin true until count is equal to or greater than five
+    if (num1 < 25) { //This conditional stament is run only if num1 is less than 25
+        num1 = Addition(num1, num2) // The second function is called upon and can now be run
+        count ++ // The count variable is incremented by one so that the loop will eventually end when it hits five
+    } else { // Once the first conditional is deemed to be false it will run the code bellow
+        num2 = Multiplication(num1, num2) 
+        count ++
+    }
+}
+
+console.log(num1) // The value of num1 is printed when the count reaches 5 and loop ends
+console.log(num2) // This is the next line of code executed
+```
+
 ## Q8. Explain type coercion, using examples from the JavaScript programming language
 
 Type coercion is the implicit transformation from one data type to a different data type. This can include float to integer, integer to float, integer to string, string to integer and so on. It is important to note that type coercion and type conversion are separate, type coercion is always implicit whereas type conversion is explicit. These changes will occur depending on the type operating performed on them. For example, when adding a string with numeric values and an integer JavaScript will assume that the operation being performed is a string concatenation and implicitly convert the integer into a string. Whereas for the opposite (string to integer coercion) a multiplication, subtraction or division operation must be used on these two values. In the case of changing Boolean values to numeric ones, the Boolean is converted to an integer, 0 for false and 1 for true. 
 
 Below are some examples of this in JavaScript.
+
+```
+const string = '50' // Initialising a string 
+const int = 10 // Initialising an integer
+const bool = true // Initialising a boolean
+
+console.log(`This is integer to string coersion ${string + int}`)
+console.log(`This is string to int coersion, ${string * int}`)
+console.log(`This is boolean to integer coersion ${bool + int}`)
+```
 
 ## Q9. Explain data types, using examples from the JavaScript programming language
 
@@ -108,6 +145,10 @@ The next list will be examples of different ways to iterate through an array, so
 
 Below is an example of multiple different ways in which an array can be manipulated in JavaScript code. 
 
+```
+
+```
+
 ## Q11. Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
 
 A JavaScript object is an unordered collection of properties, with each property consisting of a key-value pair. The key-value pair refers to the association between a given key (which can be represented as either a string or symbol) and the value of the key. An object can either be declared by assigning a variable with `new Object()` or by using curly braces such as, `const person  = {}`. To talk about data manipulation of objects in JavaScript, the first concept to understand is creating/adding new properties to an existing object. In JavaScript this can be done by using the name given to the object followed by a period (.) and the name of the new or existing key. This is then followed by assigning a new value using the equals sign (=) and the new value itself. For example, `person.name = ‘David’`. Since our person object does not yet have any properties a new key value pair will be created as a result of this. If the key already exists, then this declaration will reassign the original value of that key to the new one. 
@@ -118,11 +159,59 @@ When using objects in JavaScript is often the case that developers will come acr
 
 Lastly, there are also ways of incorporating functions into objects through the use of the ‘set’ and ‘get’ key words. Set is used to create function within an object that are used to set/change the existing value of a property. Get on the other hand is used to retrieve one or multiple properties and log them to the console or display them in some way. 
 
-Below are a few examples in JavaScript code of how objects can be manipulated. 
+Below are a few examples in JavaScript code of how objects can be manipulated.
+
+```
+const person = {
+    name: 'James',
+    age: 42,
+    score: 0,
+    set updateScore(num) {
+        this.score += num;
+    }
+}
+
+Object.values(person) // returns ['James', 42, 0, undefined]
+Object.keys(person) // returns ['name', 'age', 'score', 'setScore']
+Object.entries(person) // returns [['name', 'James'], ['age', 42], ['score', 0], ['setScore', undefined]]
+person.updateScore = 4 // updates the score by + 4
+person.updateScore = 6 // score is now at 10
+Object.seal(person) // prevents objects from being deleted
+delete person.score // does not work
+person.name = 'Joe' // still works because object is not frozen
+Object.freeze(person) // freezes object
+person.age = 43 // does not change age because object is frozen
+
+
+const people = [{
+    name: 'David', age: 24, address: {city: "Brisbane", state: "Queensland"}
+}, {
+    name: 'Jain', age: 31, address: {city: "Melbourne", state: "Victoria"}
+}, {
+    name: 'Mason', age: 19, address: {city: "Brisbane", state: "Queensland"}
+}]
+
+for (let i = 0; i < people.length; i++) {
+    if (people[i].address.city == 'Brisbane') { //finds each person that lives in brisbane
+        console.log(people[i]) // prints the object that have a city == brisbane to the console
+    }
+}
+```
 
 ## Q12. Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
 
 JSON (JavaScript object notation) is a standard way of representing structured data in text-based format. Its most common use is for transmitting data to be displayed in web apps. As the name suggests it is very similar to how JavaScript objects are represented that being curly braces ({}). Manipulating the data within JSON objects is also similar to how it is done in vanilla JavaScript with some differences. To demonstrate how JSON can be manipulated I will explain how to create, delete, and parse JSON data. Creating JSON data can be done by ensuring that the keys are stings and the structure begins with curly braces as an object should. Next, we take a variable that holds the object we want to pass to the JSON file and use the method `JSON.stringify()`. This method uses the object as a parameter and converts the keys to strings making it much mor simple for it be implemented into a JSON file. When deleting a JSON element it can either be done manually or by using various built-in methods, for example if you have identified the position of the object and the json is stored in an array you could use a splice method. Finally, the most common way of manipulating JSON day is by calling from a file so that it can be used in some way in a program. This is done by using the JSON built in function called `parse()` which retrieves the JSON object and returns it in standard JavaScript object format. This can then be stored in a variable where further data manipulation can be used. 
+
+```
+let pets = {a: 'Cat', b: 'Dog', c: 'Bird'}
+JSON.stringify(pets) // The pets object has changed to '{"a": "Cat", "b": "Dog", "c": "Bird"}'
+console.log(pets.a) // Logs "Cat" to the console
+console.log(pets["b"]) // Logs "Dog" to the console
+
+const jsonPerson =  '{"name": "Daniel", "email": "danielj@gexample.com", "age": 22}'; // Creating a json object
+const person = JSON.parse(jsonPerson); // This consverts the JSON notation to a standard javascript object
+person.age // This will return 22
+```
 
 ## Q13. For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
 
