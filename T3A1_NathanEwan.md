@@ -287,3 +287,28 @@ for (model of models) { // This is for loop that will iterate through each model
 ```
 # References
 
+Holbam, D., 2015. How Teams Use Git for Big Projects - IntelligentBee. [online] IntelligentBee. Available at: <https://blog.intelligentbee.com/2015/03/18/how-teams-use-git-for-big-projects/> [Accessed 22 December 2021].
+
+Developer.mozilla.org. n.d. Control flow - MDN Web Docs Glossary: Definitions of Web-related terms | MDN. [online] Available at: <https://developer.mozilla.org/en-US/docs/Glossary/Control_flow> [Accessed 31 December 2021].
+
+Cleary, R., 2020. Control Flow in JavaScript. [online] Medium. Available at: <https://medium.com/@rianna.cleary/control-flow-in-javascript-9c63d0c98bb9> [Accessed 31 December 2022].
+
+GeeksforGeeks. 2020. What is Type Coercion in JavaScript ? - GeeksforGeeks. [online] Available at: <https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/> [Accessed 31 December 2021].
+
+Busbee, K. and Braunschweig, D., n.d. Data Types. [online] Press.rebus.community. Available at: <https://press.rebus.community/programmingfundamentals/chapter/data-types/> [Accessed 31 December 2021].
+
+Soni, S., 2021. JavaScript map vs. forEach: When to Use Each One. [online] Code Envato Tuts+. Available at: <https://code.tutsplus.com/tutorials/javascript-map-vs-foreach-when-to-use-each-one--cms-38365> [Accessed 5 January 2022].
+
+Developer.mozilla.org. n.d. Working with objects - JavaScript | MDN. [online] Available at: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects> [Accessed 5 January 2022].
+
+Boceanu, M., 2020. Using Object Manipulation in JavaScript | Codehouse. [online] Codehousegroup.com. Available at: <https://www.codehousegroup.com/insight-and-inspiration/tech-stream/using-object-manipulation-in-javascript> [Accessed 6 January 2022].
+
+Developer.mozilla.org. n.d. Working with JSON - Learn web development | MDN. [online] Available at: <https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON> [Accessed 9 January 2022].
+
+Atlassian. n.d. Git Workflow | Atlassian Git Tutorial. [online] Available at: <https://www.atlassian.com/git/tutorials/comparing-workflows> [Accessed 9 January 2022].
+
+Reinagel, S., 2016. The Seven Aspects of Software Quality. [online] Silas Reinagel. Available at: <https://www.silasreinagel.com/blog/2016/11/15/the-seven-aspects-of-software-quality/> [Accessed 10 January 2022].
+
+Hamilton, T., 2021. 7 Principles of Software Testing: Learn with Examples. [online] Guru99. Available at: <https://www.guru99.com/software-testing-seven-principles.html> [Accessed 10 January 2022].
+
+Medium. 2020. What is MERN Stack?. [online] Available at: <https://medium.com/@blockchain_simplified/what-is-mern-stack-9c867dbad302> [Accessed 11 January 2022].
