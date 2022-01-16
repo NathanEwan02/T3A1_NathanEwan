@@ -115,6 +115,23 @@ console.log(`This is boolean to integer coersion ${bool + int}`)
 
 Put simply, a data type is a method of classification used to distinguish between different types of data. This is done so that data can be used in various contexts for a particular task or to obtain a specific output. The JavaScript language uses many data types including, integers, strings, arrays, objects, Booleans, and floats. Integers are whole numbers that can be positive, negative and zero. Mathematical operations can be performed on integers including the basic operations multiplication, division, addition, and subtraction. This also goes for floats (floating point numbers) which are integers followed by decimals which can provide a more precise numeric value for the developer. Strings simply refers to a string of characters be it numbers, letters, or symbols. This data type can perform functions such as string concatenation and can be iterated through using a loop. Arrays can be thought of as a list/collection of values which can be either, integers, strings, floats, Booleans and even objects. Arrays can be iterated through using loops such as for loops and while loops and holds a numbered index value for each element of the array starting at zero. Objects are a collection of key/value pairs that can either be represented as symbols (using ‘:’) or as strings. The key value pairs within the object are not ordered and are accessed by their key. Finally, there are Booleans which are data types that can only have two possibly values, most often represented as true or false. 
 
+```
+let equation = ((3*(4+6) - 5)**2) // This is an example of how integers can be used to handle complex equations
+count = 0
+
+while (count < 3) { // This is an example of how integers can be used in loops
+    console.log("hello")
+    count++ // Count is increased by one each time
+}
+
+bool = false 
+
+while (bool != true) { // This is an example of how booleans can be used in loops
+    console.log("Goodbye")
+    bool = true // Loop ends once bool is declared as true
+}
+```
+
 ## Q10. Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 
 There are many ways in which an array can be manipulated, this includes iteration, finding an element or checking if an element exists. JavaScript provides developers with many built in methods to simplify achieving these things. Each of these methods either falls into the category of an ‘non mutable’ method or a ‘mutable’ method. This means that mutable methods will be able to change the contents of the array, whereas a non-mutable method cannot. An example of some of the methods that are non-mutable include: 
@@ -146,7 +163,24 @@ The next list will be examples of different ways to iterate through an array, so
 Below is an example of multiple different ways in which an array can be manipulated in JavaScript code. 
 
 ```
+let array = [1,2,3,4,5]
+array.pop() // array = [1,2,3,4], returns 5
+array.push(5) // array = [1,2,3,4,5]
+array.unshift(1) // array = [1,1,2,3,4,5]
+array.splice(0, 1, 0) // array = [0,1,2,3,4,5]
+array.shift() // array = [1,2,3,4,5], returns 0
+array.splice(4, 1) // array = [1,2,3,4]
+array.map(a => a * 2) // Does not change original array, [2,4,6,8]
+array.filter(a => a * 3) // Does not change original array, [3,6,9,12]
+console.log(array) // array = [1,2,3,4]
+array.forEach(a => a + 1) // Does not change original array, returns each result individually, [2,3,4,5]
 
+
+for (i = 0; i < array.length; i++ ) {
+    array[i] = array[i] * 10
+}
+
+console.log(array) // array = [10,20,30,40]
 ```
 
 ## Q11. Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
